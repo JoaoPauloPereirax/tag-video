@@ -3,7 +3,7 @@
 <head>
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>POSTER, WIDTH E HEIGHT</title>
+       <title>COMPATIBILIDADE</title>
        <style>
               main{
                      display: flex;
@@ -33,21 +33,21 @@
 <body>
        <main>
               <div class="left">
-                     <video src="./assets/video/JARVIS.mp4" 
-                     width="300" 
-                     height="200" 
+                     <video autoplay muted loop controls
                      poster="./assets/images/homem de ferro.jpg"
-                     controls
                      >
+                     <source src="./assets/video/JARVIS.mp4" type="video/mp4">
+                     <source src="./assets/video/JARVIS.ogg" type="video/ogg">
+                     Seu navegador não suporta a tag de vídeo.
 
                      </video>
               </div>
               <div class="right">
-                     <h2>POSTER</h2>
-                     <p>Define uma imagem a ser exibida antes que o vídeo comece a carregar ou enquanto o usuário não o reproduz.</p>
-                     <h2>WIDTH E HEIGHT</h2>
-                     <p>Define a largura e altura do vídeo (em pixels).</p>
-                     <img src="./assets/images/2.PNG" alt="código html">
+                     <h2>SOURCE</h2>
+                     <p>Você pode usar elementos SOURCE para especificar diferentes arquivos de vídeo para compatibilidade com diversos navegadores.</p>
+                     <p>A tag video é amplamente suportada nos navegadores modernos. Principalmente nos formatos de vídeo comuns (.mp4, .ogg, .webm)</p>
+                    
+                     <img src="./assets/images/4.PNG" alt="código html">
               </div>
 
               
